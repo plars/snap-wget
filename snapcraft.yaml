@@ -1,0 +1,17 @@
+name: wget
+summary: wget
+description: retrieves files from the web
+version: 0.1
+icon: icon.png
+
+apps:
+    wget:
+        command: usr/bin/wget
+parts:
+    wget:
+        plugin: nil
+        stage-packages:
+            - wget
+        snap:
+            - usr/bin/wget
+
